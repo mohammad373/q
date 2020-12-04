@@ -34,13 +34,14 @@ print(Fore.RED + """
 
 
 
-print("Pleass Enter Your 1 or 2  or 3 or 4 or 5")
+print("Pleass Enter Your 1 or 2  or 3 or 4 or 5 or 6")
 print(Fore.RED + "     [1] "+ Fore.GREEN + "Ip WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [2] "+ Fore.GREEN + "Your Ip" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [3] "+ Fore.GREEN + "Cloud Flare For WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [4] "+ Fore.GREEN + "Domain 1" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [5] "+ Fore.GREEN + "Domain 2" + Fore.BLUE + " ;) ")
-n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5" + Fore.BLUE + "==>  " ))
+print(Fore.RED + "     [6] "+ Fore.GREEN + "Admin WebSite" + Fore.BLUE + " ;) ")
+n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5 / 6" + Fore.BLUE + "==>  " ))
         
 
 #__________________________________________________________________________________________________________
@@ -166,6 +167,83 @@ if n == 5:
               pass
       __5__() 
   
-  
+# __________________________________________________________________________________________________________________
+# ==================================================================================================================
+
+# Admin WebSite
+
+
+if n == 6:
+  import os
+import requests
+import time
+from colorama import Fore
+
+def __6__():
+    my_list = ['robots.txt',
+'search/',
+'admin/',
+'login/',
+'sitemap.xml',
+'sitemap2.xml',
+'config.php',
+'wp-login.php',
+'log.txt',
+'update.php',
+'INSTALL.pgsql.txt',
+'user/login/',
+'INSTALL.txt',
+'profiles/',
+'scripts/',
+'LICENSE.txt',
+'CHANGELOG.txt',
+'themes/',
+'inculdes/',
+'misc/',
+'user/logout/',
+'user/register/',
+'cron.php',
+'filter/tips/',
+'comment/reply/',
+'xmlrpc.php',
+'modules/',
+'install.php',
+'MAINTAINERS.txt',
+'user/password/',
+'node/add/',
+'INSTALL.sqlite.txt',
+'UPGRADE.txt',
+'INSTALL.mysql.txt']
+    try:
+        target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
+        if not "https://" in target or not "http://" in target:
+            target = ("http://" + target + "/")
+        else:
+            target = (target + "/")
+        for item in my_list:
+            req = requests.get(target)
+            if rqe.tutle_code == 200 or req.tutle_code == 405:
+                print(Fore.GREEN+"[+]"+Fore.GREEN + target + Fore.GREEN + "Found")
+            else:
+                print(Fore.RED +"[+]"+Fore.RED +target + Fore.YELLOW + "Not Found")
+    except:
+        pass
+__6__()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
