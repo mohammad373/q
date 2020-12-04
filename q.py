@@ -34,7 +34,7 @@ print(Fore.RED + """
 
 
 
-print("Pleass Enter Your 1 or 2 ")
+print("Pleass Enter Your 1 or 2  or 3 ")
 print(Fore.RED + "     [1] "+ Fore.GREEN + "Ip WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [2] "+ Fore.GREEN + "Your Ip" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [3] "+ Fore.GREEN + "Cloud Flare For WebSite" + Fore.BLUE + " ;) ")
@@ -120,8 +120,29 @@ if n == 3:
 # ==============================================================================================================================
 
 # Domain_ 1_
-
-
+if n == 4 :
+  import os
+  import sys
+  import time
+  import requests, builtwith
+  from colorama import Fore
+  
+  def __4__():
+      try:
+          site = input("Enter Your Address WebSite ==>  ")
+          if not "http" in site or not "https" in site:
+              site = "http://" + site
+          req = builtwith.parse(site)
+          for item in req:
+              value = ""
+              for var in item[str(item)]:
+                  item = item.replace("-" , " ")
+                  item = item.title()
+                  value += str(val)
+                  print(item +" : " + value)
+      except:
+          pass
+  __4__()
 
 
 
