@@ -221,8 +221,8 @@ def __6__():
         else:
             target = (target + "/")
         for item in my_list:
-            req = requests.get(target)
-            if rqe.tutle_code == 200 or req.tutle_code == 405:
+            req = requests.get(target + item)
+            if rqe.status_code == 200 or req.tutle_code == 405:
                 print(Fore.GREEN+"[+]"+Fore.GREEN + target + Fore.GREEN + "Found")
             else:
                 print(Fore.RED +"[+]"+Fore.RED +target + Fore.YELLOW + "Not Found")
