@@ -20,7 +20,6 @@ import sys
 import os
 def __1__():
     try:
-        print(Fore.RED +"[!]" + Fore.GREEN + "Hello . Welcome Back " +  Fore.RED";)")
         site = input(Fore.RED + "Pleass Enter You Target Address " + Fore.YELLOW + "==>  ")
         if not "http" in site or not "https" in site:
             site = ("http://" + site)
