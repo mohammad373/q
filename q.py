@@ -24,7 +24,7 @@ def __1__():
         time.sleep(0.6)
         print(Fore.GREEN + "Your Ip " + Fore.YELLOW + "==>  "  + Fore.RED + str(soc))
         time.sleep(1)
-        print(Fore.GREEN + "\nEnd " + Fore.YELLOW + ";)")
+        print(Fore.GREEN + "\t\tEnd " + Fore.YELLOW + ";)\n")
     except:
         pass
 __1__()
