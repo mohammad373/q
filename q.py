@@ -179,8 +179,8 @@ if n == 6:
   import time
   from colorama import Fore
 
-  def __6__():
-    my_list = ['robots.txt',
+
+  my_list = ['robots.txt',
 'search/',
 'admin/',
 'login/',
@@ -214,6 +214,7 @@ if n == 6:
 'INSTALL.sqlite.txt',
 'UPGRADE.txt',
 'INSTALL.mysql.txt']
+  def __6__():
     try:
         target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
         if not "https://" in target or not "http://" in target:
