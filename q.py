@@ -16,12 +16,16 @@ print(Fore.RED + """
 
 
 import socket
+import time
 def __1__():
     try:
         site = input(Fore.RED + "Pleass Enter You Target Address " + Fore.YELLOW + "==>  ")
         soc = socket.gethostbyname(site)
+        time.sleep(0.1)
         print(Fore.GREEN + "Your Ip " + Fore.YELLOW + "==>  "  + Fore.RED + str(soc))
-        print(Fore.GREEN + "End " + Fore.YELLOW + ";)")
+        time.sleep(0.2)
+        print(Fore.GREEN + "\nEnd " + Fore.YELLOW + ";)")
     except:
         pass
 __1__()
+
