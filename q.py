@@ -2,17 +2,17 @@
 
 from colorama import Fore
 print(Fore.RED + """
-                ╔═════╗     ╔═════╗          
-                ║ ███ ║     ║ ███ ║                      
-                ║ ███ ║     ║ ███ ║       
-                ║ ███ ╚═════╝ ███ ║
-                ║ ███████████████ ║   H a c k e r     
-                ║ ███████████████ ║   N w w b  :)
-                ║ ███ ╔═════╗ ███ ║      
-                ║ ███ ║     ║ ███ ║      
-                ║ ███ ║     ║ ███ ║      
-                ╚═════╝     ╚═════╝ 
-                                                """)
+                              ╔═════╗     ╔═════╗          
+                              ║ ███ ║     ║ ███ ║                      
+                              ║ ███ ║     ║ ███ ║       
+                              ║ ███ ╚═════╝ ███ ║
+                              ║ ███████████████ ║   H a c k e r     
+                              ║ ███████████████ ║   N w w b  :)
+                              ║ ███ ╔═════╗ ███ ║      
+                              ║ ███ ║     ║ ███ ║      
+                              ║ ███ ║     ║ ███ ║      
+                              ╚═════╝     ╚═════╝ 
+                                                              """)
 
 
 
@@ -85,6 +85,7 @@ if n == 3:
                 host = item + "." + site
                 bypass = socket.gethostbyname(str(host))
                 print(Fore.GREEN + "Your Ip "+ Fore.YELLOW + "==> " + Fore.RED + str(bypass) + Fore.YELLOW + " | " + Fore.RED + str(host))
+                time.sleep(2)
         except:
             pass
     __3__()
