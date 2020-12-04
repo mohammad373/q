@@ -216,12 +216,12 @@ if n == 6:
       'INSTALL.mysql.txt']
         def __6__():
           try:
-              target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
+             target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
              if 'http' in target:
                   pass
-              elif 'http' != target:
+             elif 'http' != target:
                   target = ('http://'+target)
-              for item in my_list:
+             for item in my_list:
                   ur = (target + "/" + item)          
                   req = requests.get(ur)
                   if rqe.status_code == 200 or req.status_code == 405:
