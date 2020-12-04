@@ -219,7 +219,7 @@ def __6__():
         if not "https://" in target or not "http://" in target:
             pass
         else:
-            target = ( "http://+ target)
+            target = ( "http://"+ target)
         for item in my_list:
             time.sleep(0.1)
             ur = (target + "/" + item)          
