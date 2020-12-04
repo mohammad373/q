@@ -224,7 +224,7 @@ def __6__():
             time.sleep(0.1)
             ur = (target + "/" + item)          
             req = requests.get(ur)
-            if rqe.status_code == 200 or req.tutle_code == 405:
+            if rqe.status_code == 200 or req.status_code == 405:
                 print(Fore.GREEN+"[+]"+Fore.GREEN + ur + Fore.GREEN + "Found")
             else:
                 print(Fore.RED +"[+]"+Fore.RED +ur + Fore.YELLOW + "Not Found")
