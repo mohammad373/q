@@ -2,16 +2,16 @@
 
 from colorama import Fore
 print(Fore.RED + """
-                         ╔═════╗     ╔═════╗          
-                         ║ ███ ║     ║ ███ ║                      
-                         ║ ███ ║     ║ ███ ║       
-                         ║ ███ ╚═════╝ ███ ║
-                         ║ ███████████████ ║   H a c k e r     
-                         ║ ███████████████ ║   N w w b  :)
-                         ║ ███ ╔═════╗ ███ ║      
-                         ║ ███ ║     ║ ███ ║      
-                         ║ ███ ║     ║ ███ ║      
-                         ╚═════╝     ╚═════╝ 
+                               ╔═════╗     ╔═════╗          
+                               ║ ███ ║     ║ ███ ║                      
+                               ║ ███ ║     ║ ███ ║       
+                               ║ ███ ╚═════╝ ███ ║
+                               ║ ███████████████ ║   H a c k e r     
+                               ║ ███████████████ ║   N w w b  :)
+                               ║ ███ ╔═════╗ ███ ║      
+                               ║ ███ ║     ║ ███ ║      
+                               ║ ███ ║     ║ ███ ║      
+                               ╚═════╝     ╚═════╝ 
                   ╔════════════════════════════════════════╗                         
                   ║                                        ║   
                   ║           Name : H A C K E R           ║ 
@@ -38,7 +38,7 @@ print("Pleass Enter Your 1 or 2 ")
 print(Fore.RED + "     [1] "+ Fore.GREEN + "Ip WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [2] "+ Fore.GREEN + "Your Ip" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [3] "+ Fore.GREEN + "Cloud Flare For WebSite" + Fore.BLUE + " ;) ")
-n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 " + Fore.BLUE + "==>  " ))
+n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 " + Fore.BLUE + "==>  " ))
         
 
 #__________________________________________________________________________________________________________
