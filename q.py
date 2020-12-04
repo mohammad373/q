@@ -175,11 +175,11 @@ if n == 5:
 
 if n == 6:
   import os
-import requests
-import time
-from colorama import Fore
+  import requests
+  import time
+  from colorama import Fore
 
-def __6__():
+  def __6__():
     my_list = ['robots.txt',
 'search/',
 'admin/',
@@ -230,7 +230,7 @@ def __6__():
                 print(Fore.RED +"[+]"+Fore.RED +ur + Fore.YELLOW + "Not Found")
     except:
         pass
-__6__()
+  __6__()
 
 
 
