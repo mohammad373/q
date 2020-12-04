@@ -174,64 +174,63 @@ if n == 5:
 
 
 if n == 6:
-  import os
-  import requests
-  import time
-  from colorama import Fore
+        import os
+        import requests
+        import time
+        from colorama import Fore
 
 
-  my_list = ['robots.txt',
-'search/',
-'admin/',
-'login/',
-'sitemap.xml',
-'sitemap2.xml',
-'config.php',
-'wp-login.php',
-'log.txt',
-'update.php',
-'INSTALL.pgsql.txt',
-'user/login/',
-'INSTALL.txt',
-'profiles/',
-'scripts/',
-'LICENSE.txt',
-'CHANGELOG.txt',
-'themes/',
-'inculdes/',
-'misc/',
-'user/logout/',
-'user/register/',
-'cron.php',
-'filter/tips/',
-'comment/reply/',
-'xmlrpc.php',
-'modules/',
-'install.php',
-'MAINTAINERS.txt',
-'user/password/',
-'node/add/',
-'INSTALL.sqlite.txt',
-'UPGRADE.txt',
-'INSTALL.mysql.txt']
-  def __6__():
-    try:
-        target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
-        if not "https://" in target or not "http://" in target:
-            target = ( "http://"+ target)
-        else:
-            pass
-        for item in my_list:
-            time.sleep(0.1)
-            ur = (target + "/" + item)          
-            req = requests.get(ur)
-            if rqe.status_code == 200 or req.status_code == 405:
-                print(Fore.GREEN+"[+]"+Fore.GREEN + ur + Fore.GREEN + "Found")
-            else:
-                print(Fore.RED +"[+]"+Fore.RED +ur + Fore.YELLOW + "Not Found")
-    except:
-        pass
-  __6__()
+        my_list = ['robots.txt',
+      'search/',
+      'admin/',
+      'login/',
+      'sitemap.xml',
+      'sitemap2.xml',
+      'config.php',
+      'wp-login.php',
+      'log.txt',
+      'update.php',
+      'INSTALL.pgsql.txt',
+      'user/login/',
+      'INSTALL.txt',
+      'profiles/',
+      'scripts/',
+      'LICENSE.txt',
+      'CHANGELOG.txt',
+      'themes/',
+      'inculdes/',
+      'misc/',
+      'user/logout/',
+      'user/register/',
+      'cron.php',
+      'filter/tips/',
+      'comment/reply/',
+      'xmlrpc.php',
+      'modules/',
+      'install.php',
+      'MAINTAINERS.txt',
+      'user/password/',
+      'node/add/',
+      'INSTALL.sqlite.txt',
+      'UPGRADE.txt',
+      'INSTALL.mysql.txt']
+        def __6__():
+          try:
+              target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
+             if 'http' in target:
+                  pass
+              elif 'http' != target:
+                  target = ('http://'+target)
+              for item in my_list:
+                  ur = (target + "/" + item)          
+                  req = requests.get(ur)
+                  if rqe.status_code == 200 or req.status_code == 405:
+                      print(Fore.GREEN+"[+]"+Fore.GREEN + ur )
+                  else:
+                      print(Fore.RED +"[+]"+Fore.RED +ur)
+          except:
+              pass
+        __6__()
 
 
 
