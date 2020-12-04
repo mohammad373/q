@@ -217,9 +217,9 @@ def __6__():
     try:
         target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
         if not "https://" in target or not "http://" in target:
-            pass
-        else:
             target = ( "http://"+ target)
+        else:
+            pass
         for item in my_list:
             time.sleep(0.1)
             ur = (target + "/" + item)          
