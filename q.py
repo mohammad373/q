@@ -159,7 +159,7 @@ if n == 5:
 
       def __5__():
           try:
-              target = input(Fore.  + "Enter Your Address WebSite" + Fore.  + " ==>  ")
+              target = input(Fore.RED  + "Enter Your Address WebSite" + Fore.YELLOW  + " ==>  ")
               if not "http://" in target or not "https://" in target:
                   target = "http://" + target
               info = requests.get("https://api.hackertarget.com/dnslookup/?q=" + target).text
