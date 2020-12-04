@@ -122,19 +122,19 @@ if n == 3:
 
 # Domain_ 1_
 if n == 4 :
-  import os
-  import sys
   import time
   import requests, builtwith
   from colorama import Fore
   
   def __4__():
       try:
-          site = input("Enter Your Address WebSite ==>  ")
-          req = builtwith.parse(site)
+          target = input("Enter Your Address WebSite ==>  ")
+          if not 'https://' in target or not 'http://' in target:
+              target = 'http://'+target
+          req = builtwith.parse(target)
           for item in req:
               value = ""
-              for var in item[str(item)]:
+              for var in req[str(item)]:
                   item = item.replace("-" , " ")
                   item = item.title()
                   value += str(val)
