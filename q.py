@@ -19,7 +19,7 @@ print(Fore.RED + """
 print("Pleass Enter Your 1 or 2 ")
 print(Fore.RED + "     [1] "+ Fore.GREEN + "Ip WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [2] "+ Fore.GREEN + "Your Ip" + Fore.BLUE + " ;) \n\n")
-n = int(input(Fore.GREEN + "Enter Your Number 1 / 2 " + Fore.BLUE + "==>  " )
+n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 " + Fore.BLUE + "==>  " ))
         
 
 #__________________________________________________________________________________________________________
