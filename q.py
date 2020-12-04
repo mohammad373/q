@@ -162,7 +162,7 @@ if n == 5:
               target = input(Fore.RED  + "Enter Your Address WebSite" + Fore.YELLOW  + " ==>  ")
               if not "http://" in target or not "https://" in target:
                   target = "http://" + target
-              info = requests.get("https://api.hackertarget.com/dnslookup/?q=" + target).text
+              info = requests.get("http://api.hackertarget.com/dnslookup/?q=" + target).text
               print(Fore.GREEN + info)
           except:
               pass
