@@ -34,11 +34,12 @@ print(Fore.RED + """
 
 
 
-print("Pleass Enter Your 1 or 2  or 3 ")
+print("Pleass Enter Your 1 or 2  or 3 or 4 ")
 print(Fore.RED + "     [1] "+ Fore.GREEN + "Ip WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [2] "+ Fore.GREEN + "Your Ip" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [3] "+ Fore.GREEN + "Cloud Flare For WebSite" + Fore.BLUE + " ;) ")
-n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 " + Fore.BLUE + "==>  " ))
+print(Fore.RED + "     [4] "+ Fore.GREEN + "Domain 1" + Fore.BLUE + " ;) ")
+n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 " + Fore.BLUE + "==>  " ))
         
 
 #__________________________________________________________________________________________________________
