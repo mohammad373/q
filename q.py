@@ -131,8 +131,6 @@ if n == 4 :
   def __4__():
       try:
           site = input("Enter Your Address WebSite ==>  ")
-          if not "http" in site or not "https" in site:
-              site = "http://" + site
           req = builtwith.parse(site)
           for item in req:
               value = ""
