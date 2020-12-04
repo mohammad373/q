@@ -34,12 +34,13 @@ print(Fore.RED + """
 
 
 
-print("Pleass Enter Your 1 or 2  or 3 or 4 ")
+print("Pleass Enter Your 1 or 2  or 3 or 4 or 5")
 print(Fore.RED + "     [1] "+ Fore.GREEN + "Ip WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [2] "+ Fore.GREEN + "Your Ip" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [3] "+ Fore.GREEN + "Cloud Flare For WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [4] "+ Fore.GREEN + "Domain 1" + Fore.BLUE + " ;) ")
-n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 " + Fore.BLUE + "==>  " ))
+print(Fore.RED + "     [5] "+ Fore.GREEN + "Domain 2" + Fore.BLUE + " ;) ")
+n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5" + Fore.BLUE + "==>  " ))
         
 
 #__________________________________________________________________________________________________________
@@ -144,3 +145,29 @@ if n == 4 :
   __4__()
 
 
+  
+  #________________________________________________________________________________________________________
+  #========================================================================================================
+  
+  
+if n == 5:
+      import sys
+      import requests
+      import sys
+      import time
+      from colorama import Fore
+
+      def __5__():
+          try:
+              target = input(Fore.  + "Enter Your Address WebSite" + Fore.  + " ==>  ")
+              if not "http://" in target or not "https://" in target:
+                  target = "http://" + target
+              info = requests.get("https://api.hackertarget.com/dnslookup/?q=" + target).text
+              print(Fore.GREEN + info)
+          except:
+              pass
+      __5__() 
+  
+  
+  
+  
