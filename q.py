@@ -180,24 +180,21 @@ if n == 6:
           import time
           from colorama import Fore
           def __6__():
-              try:
+
                   url = input("Enter Your Address12 webSite ==>  ")
                   
                   if 'http' in url:
                         pass
                   elif 'http' != url:
-                       url = ('http://'+url)
+                       url = 'http://'+url
                
                   for i in my_list:
-                      time.sleep(0.1)
                       rq = url+ "/" + i
                       r = requests.get(rq)
-                      if r.status_code  == 200 or r.status_code  == 405:
+                      if r.status_code   == 200 or r.status_code   == 405:
                           print(Fore.GREEN + r +Fore.YELLOW  + " | " +Fore.GREEN + "Found")
                       else:
                           print(Fore.RED + r +Fore.YELLOW  +  " | " +Fore.RED  +  "Not Found")
-              except:
-                  pass
           __6__()
 
 
