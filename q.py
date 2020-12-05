@@ -246,24 +246,17 @@ if n == 7 :
         def __7__():
 
                 i = input(Fore.RED + "Enter Your IP Address WebSite" + Fore.YELLOW + " ==>  ")
-                if i == "":
-                    try:
-                        print(Fore.GREEN + "Ok Good Lunch ;)")
-                        time.sleep(3)
-                        sys.exit()
-                    except:
-                        pass
-                info = ipapi.location(ip=i, key=None, field=None)
+                source = ipapi.location(ip=site, key=None, field=None)
                 try:
-                    print(Fore.GREEN + "Your Ip " + Fore.YELLOW + "==> " + Fore.RED + info["ip"])
-                    print(Fore.GREEN + "City "    + Fore.YELLOW + "==>  " + Fore.RED + info["city"])
-                    print(Fore.GREEN + "Ip Country "    + Fore.YELLOW + "==>  " + Fore.RED + info["country"])
-                    print(Fore.GREEN + "Country "    + Fore.YELLOW + "==>  " + Fore.RED + info["country_name"])
-                    print(Fore.GREEN + "Region "    + Fore.YELLOW + "==>  " + Fore.RED + info["region"])
-                    print(Fore.GREEN + "Callinf Code "    + Fore.YELLOW + "==>  " + Fore.RED + info["country_calling_code"])
-                    print(Fore.GREEN + "Org "    + Fore.YELLOW + "==>  " + Fore.RED + info["org"])
-                except:
-                    pass
+                    print(Fore.GREEN+" [!]"+Fore.RED+" See your info")
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" ip = "+ source["ip"])
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" city = " + source["city"])
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" region = "+ source["region"])
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" id country = "+source["country"])
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" country = "+ source["country_name"])
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" Calling Code = "+source["country_calling_code"])
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" Languages = "+source["languages"])
+                    print (Fore.GREEN+" [!]"+Fore.BLUE+" org = "+ source["org"])
                  
         __7__()
 
