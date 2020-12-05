@@ -253,7 +253,7 @@ if n == 7 :
                         sys.exit()
                     except:
                         pass
-                info = ipapi.loction((ip=i, key=None, field=None)
+                info = ipapi.location(ip=i, key=None, field=None)
                 try:
                     print(Fore.GREEN + "Your Ip " + Fore.YELLOW + "==> " + Fore.RED + info["ip"])
                     print(Fore.GREEN + "City "    + Fore.YELLOW + "==>  " + Fore.RED + info["city"])
