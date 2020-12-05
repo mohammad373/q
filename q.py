@@ -192,9 +192,9 @@ if n == 6:
                       rq = url+ "/" + i
                       r = requests.get(rq)
                       if r.status_code   == 200 or r.status_code   == 405:
-                          print(Fore.GREEN + r +Fore.YELLOW  + " | " +Fore.GREEN + "Found")
+                          print("Yes")
                       else:
-                          print(Fore.RED + r +Fore.YELLOW  +  " | " +Fore.RED  +  "Not Found")
+                          print("no")
           __6__()
 
 
