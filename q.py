@@ -42,6 +42,7 @@ print(Fore.RED + "     [4] "+ Fore.GREEN + "Domain 1" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [5] "+ Fore.GREEN + "Domain 2" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [6] "+ Fore.GREEN + "Admin WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [7] "+ Fore.GREEN + "Port - Nmap" + Fore.BLUE + " ;) ")
+print(Fore.RED + "     [8] "+ Fore.GREEN + "WebSite In My Target" + Fore.BLUE + " ;) ")
 
 n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5 / 6 / 7 " + Fore.BLUE + "==>  " ))
         
@@ -255,15 +256,41 @@ if n == 7 :
           except:
             pass
         __7__()
+        
+        
+        
+        
+#__________________________________________________________________________________________________________________
+#==================================================================================================================
+
+# WebSite In My Target
+
+if n == 8:
+              import sys
+              import requests
+              import json
+              from colorama import Fore
+
+              def __8__():
+                  try:
+                      site = input(Fore.RED + "Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
+                      r = {"remoteAddress" : site}
+                      b = requests.post("https://domains.yougetsignal.com/domains.php" , r)
+                      q = json.loads(b.content)
+                      print(q)
+                      for i in q["domainArray"]:
+                          print(" " +Fore.GREEN+ i[0] + "\n")
+                  except:
+                      print(Fore.WHITE + "")
+
+                      
+                   
 
 
 
 
 
-
-
-
-
+#_____________________________________________________________________________________________________________________________________________________
 
 
 
