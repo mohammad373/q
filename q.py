@@ -174,14 +174,47 @@ if n == 5:
 
 
 if n == 6:
-          my_list = ['robots.txt','search/','admin/',]
+          my_list = ['robots.txt',
+      'search/',
+      'admin/',
+      'login/',
+      'sitemap.xml',
+      'sitemap2.xml',
+      'config.php',
+      'wp-login.php',
+      'log.txt',
+      'update.php',
+      'INSTALL.pgsql.txt',
+      'user/login/',
+      'INSTALL.txt',
+      'profiles/',
+      'scripts/',
+      'LICENSE.txt',
+      'CHANGELOG.txt',
+      'themes/',
+      'inculdes/',
+      'misc/',
+      'user/logout/',
+      'user/register/',
+      'cron.php',
+      'filter/tips/',
+      'comment/reply/',
+      'xmlrpc.php',
+      'modules/',
+      'install.php',
+      'MAINTAINERS.txt',
+      'user/password/',
+      'node/add/',
+      'INSTALL.sqlite.txt',
+      'UPGRADE.txt',
+      'INSTALL.mysql.txt']
           import requests
           import sys
           import time
           from colorama import Fore
           def __6__():
 
-                  url = input("Enter Your Address12 webSite ==>  ")
+                  url = input( Fore.RED + "Enter Your Address12 webSite" + Fore.YELLOW  + " ==>  ")
                   
                   if 'http' in url:
                         pass
