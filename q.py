@@ -224,7 +224,7 @@ if n == 6:
                           pass
                   if 'http' in url:
                         pass
-                 elif 'http' != url:
+                  elif 'http' != url:
                        url = ('http://'+url)
                
                   for i in my_list:
