@@ -34,14 +34,16 @@ print(Fore.RED + """
 
 
 
-print("Pleass Enter Your 1 or 2  or 3 or 4 or 5 or 6")
+print("Pleass Enter Your 1 or 2  or 3 or 4 or 5 or 6 or 7")
 print(Fore.RED + "     [1] "+ Fore.GREEN + "Ip WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [2] "+ Fore.GREEN + "Your Ip" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [3] "+ Fore.GREEN + "Cloud Flare For WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [4] "+ Fore.GREEN + "Domain 1" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [5] "+ Fore.GREEN + "Domain 2" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [6] "+ Fore.GREEN + "Admin WebSite" + Fore.BLUE + " ;) ")
-n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5 / 6" + Fore.BLUE + "==>  " ))
+print(Fore.RED + "     [7] "+ Fore.GREEN + "Ipapi" + Fore.BLUE + " ;) ")
+
+n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5 / 6 / 7 " + Fore.BLUE + "==>  " ))
         
 
 #__________________________________________________________________________________________________________
@@ -229,6 +231,11 @@ if n == 6:
                       else:
                           print(Fore.RED + rq  + Fore.RED + " Not Found")
           __6__()
+
+#__________________________________________________________________________________________________________________________________
+#==================================================================================================================================
+
+# ip addres for atlaatwebsite
 
 
 
