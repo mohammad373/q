@@ -41,7 +41,7 @@ print(Fore.RED + "     [3] "+ Fore.GREEN + "Cloud Flare For WebSite" + Fore.BLUE
 print(Fore.RED + "     [4] "+ Fore.GREEN + "Domain 1" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [5] "+ Fore.GREEN + "Domain 2" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [6] "+ Fore.GREEN + "Admin WebSite" + Fore.BLUE + " ;) ")
-print(Fore.RED + "     [7] "+ Fore.GREEN + "Ipapi" + Fore.BLUE + " ;) ")
+print(Fore.RED + "     [7] "+ Fore.GREEN + "Port - Nmap" + Fore.BLUE + " ;) ")
 
 n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5 / 6 / 7 " + Fore.BLUE + "==>  " ))
         
@@ -216,7 +216,7 @@ if n == 6:
           from colorama import Fore
           def __6__():
 
-                  url = input( Fore.RED + "Enter Your Address12 webSite" + Fore.YELLOW  + " ==>  ")
+                  url = input( Fore.RED + "Enter Your Address webSite" + Fore.YELLOW  + " ==>  ")
                   
                   if 'http' in url:
                         pass
@@ -235,29 +235,25 @@ if n == 6:
 #__________________________________________________________________________________________________________________________________
 #==================================================================================================================================
 
-# ip addres for atlaatwebsite
+# Nmap For Port WebSite ;)
 
 if n == 7 :
-        import ipapi
-        import socket
+        import requests
         import time
         from colorama import Fore
-
         def __7__():
-
-                i = input(Fore.RED + "Enter Your IP Address WebSite" + Fore.YELLOW + " ==>  ")
-                source = ipapi.location(ip=site, key=None, field=None)
+          try:
+              target = input(Fore.RED + "Enter Your address WebSite" + Fore.YELLOW + " ==>  ")
+              if target == "":
                 try:
-                    print(Fore.GREEN+" [!]"+Fore.RED+" See your info")
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" ip = "+ source["ip"])
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" city = " + source["city"])
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" region = "+ source["region"])
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" id country = "+source["country"])
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" country = "+ source["country_name"])
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" Calling Code = "+source["country_calling_code"])
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" Languages = "+source["languages"])
-                    print (Fore.GREEN+" [!]"+Fore.BLUE+" org = "+ source["org"])
-                 
+                  print(Fore.YELLOW + "Ok Good Lounck" + Fore.RED + " ;)")
+                  sys.exit()
+                except:
+                  pass
+              req = requests.get("https://api.hackertarget.com/nmap/?q=" + target).text
+              print(Fore.BLUE + req)
+          except:
+            pass
         __7__()
 
 
