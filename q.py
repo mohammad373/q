@@ -174,63 +174,70 @@ if n == 5:
 
 
 if n == 6:
-        import os
-        import requests
-        import time
-        from colorama import Fore
+          import requests
+          import sys
+          import time
+          from colorama import Fore
+          def __6__():
+              try:
+                  site = input("Enter Your Address webSite ==>  ")
+                  if site == "":
+                      try:
+                          print("Ok Good Lungh ;)")
+                          time.sleep(2)
+                          sys.exit()
+                      except:
+                          pass
+                  my_list = ['robots.txt',
+                'search/',
+                'admin/',
+                'login/',
+                'sitemap.xml',
+                'sitemap2.xml',
+                'config.php',
+                'wp-login.php',
+                'log.txt',
+                'update.php',
+                'INSTALL.pgsql.txt',
+                'user/login/',
+                'INSTALL.txt',
+                'profiles/',
+                'scripts/',
+                'LICENSE.txt',
+                'CHANGELOG.txt',
+                'themes/',
+                'inculdes/',
+                'misc/',
+                'user/logout/',
+                'user/register/',
+                'cron.php',
+                'filter/tips/',
+                'comment/reply/',
+                'xmlrpc.php',
+                'modules/',
+                'install.php',
+                'MAINTAINERS.txt',
+                'user/password/',
+                'node/add/',
+                'INSTALL.sqlite.txt',
+                'UPGRADE.txt',
+                'INSTALL.mysql.txt']
 
-
-        my_list = ['robots.txt',
-      'search/',
-      'admin/',
-      'login/',
-      'sitemap.xml',
-      'sitemap2.xml',
-      'config.php',
-      'wp-login.php',
-      'log.txt',
-      'update.php',
-      'INSTALL.pgsql.txt',
-      'user/login/',
-      'INSTALL.txt',
-      'profiles/',
-      'scripts/',
-      'LICENSE.txt',
-      'CHANGELOG.txt',
-      'themes/',
-      'inculdes/',
-      'misc/',
-      'user/logout/',
-      'user/register/',
-      'cron.php',
-      'filter/tips/',
-      'comment/reply/',
-      'xmlrpc.php',
-      'modules/',
-      'install.php',
-      'MAINTAINERS.txt',
-      'user/password/',
-      'node/add/',
-      'INSTALL.sqlite.txt',
-      'UPGRADE.txt',
-      'INSTALL.mysql.txt']
-        def __6__():
-          try:
-             target = input(Fore.GREEN +"Enter Your Address WebSite" + Fore.YELLOW + " ==>  ")
-             if 'http' in target:
-                  pass
-             elif 'http' != target:
-                  target = ('http://'+target)
-             for item in my_list:
-                  ur = (target + "/" + item)          
-                  req = requests.get(ur)
-                  if rqe.status_code == 200 or req.status_code == 405:
-                      print(Fore.GREEN+"[+]"+Fore.GREEN + ur )
+                  if "https://" in site:
+                      site = site + "/"
+                  elif "http://" in site:
+                      site = site + "/"
                   else:
-                      print(Fore.RED +"[+]"+Fore.RED +ur)
-          except:
-              pass
-        __6__()
+                      site = "http://" + site + "/"
+                  for i in my_list:
+                      r = site + i
+                      if r.status_code == 200 or r.status_code == 405:
+                          print(r + " | " + "Found")
+                      else:
+                          print(r + " | " + "Not Found")
+              except:
+                  pass
+          __6__()
 
 
 
