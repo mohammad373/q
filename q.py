@@ -244,7 +244,7 @@ if n == 7 :
         from colorama import Fore
 
         def __7__():
-            try:
+
                 i = input(Fore.RED + "Enter Your IP Address WebSite" + Fore.YELLOW + " ==>  ")
                 if i == "":
                     try:
@@ -264,8 +264,7 @@ if n == 7 :
                     print(Fore.GREEN + "Org "    + Fore.YELLOW + "==>  " + Fore.RED + info["org"])
                 except:
                     pass
-        except:                             
-               pass                      
+                 
         __7__()
 
 
