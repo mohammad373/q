@@ -174,54 +174,15 @@ if n == 5:
 
 
 if n == 6:
-          my_list = ['robots.txt',
-                'search/',
-                'admin/',
-                'login/',
-                'sitemap.xml',
-                'sitemap2.xml',
-                'config.php',
-                'wp-login.php',
-                'log.txt',
-                'update.php',
-                'INSTALL.pgsql.txt',
-                'user/login/',
-                'INSTALL.txt',
-                'profiles/',
-                'scripts/',
-                'LICENSE.txt',
-                'CHANGELOG.txt',
-                'themes/',
-                'inculdes/',
-                'misc/',
-                'user/logout/',
-                'user/register/',
-                'cron.php',
-                'filter/tips/',
-                'comment/reply/',
-                'xmlrpc.php',
-                'modules/',
-                'install.php',
-                'MAINTAINERS.txt',
-                'user/password/',
-                'node/add/',
-                'INSTALL.sqlite.txt',
-                'UPGRADE.txt',
-                'INSTALL.mysql.txt']
+          my_list = ['robots.txt','search/','admin/',]
           import requests
           import sys
           import time
           from colorama import Fore
           def __6__():
               try:
-                  url = input("Enter Your Address webSite ==>  ")
-                  if url == "":
-                      try:
-                          print("Ok Good Lungh ;)")
-                          time.sleep(2)
-                          sys.exit()
-                      except:
-                          pass
+                  url = input("Enter Your Address12 webSite ==>  ")
+                  
                   if 'http' in url:
                         pass
                   elif 'http' != url:
@@ -232,9 +193,9 @@ if n == 6:
                       rq = url+ "/" + i
                       r = requests.get(rq)
                       if r.status_code  == 200 or r.status_code  == 405:
-                          print(r + " | " + "Found")
+                          print(Fore.GREEN + r +Fore.YELLOW  + " | " +Fore.GREEN + "Found")
                       else:
-                          print(r + " | " + "Not Found")
+                          print(Fore.RED + r +Fore.YELLOW  +  " | " +Fore.RED  +  "Not Found")
               except:
                   pass
           __6__()
