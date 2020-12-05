@@ -44,6 +44,7 @@ print(Fore.RED + "     [6] "+ Fore.GREEN + "Admin WebSite" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [7] "+ Fore.GREEN + "Port - Nmap" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [8] "+ Fore.GREEN + "WebSite In My Target" + Fore.BLUE + " ;) ")
 print(Fore.RED + "     [9] "+ Fore.GREEN + "Pyda Kardan Bakhsh Hay Site" + Fore.BLUE + " ;) ")
+print(Fore.RED + "     [10] "+ Fore.GREEN + "whois" + Fore.BLUE + " ;) ")
 
 n= int(input(Fore.GREEN + "Enter Your Number 1 / 2 / 3 / 4 / 5 / 6 / 7 " + Fore.BLUE + "==>  " ))
         
@@ -448,6 +449,46 @@ if n == 9:
             except:
                 pass
         __9__()
+        
+# _____________________________________________________________________________________________________________________________________________________
+# =====================================================================================================================================================
+
+if n == 10:
+      import sys
+      import requests
+      import sys
+      import time
+      from colorama import Fore
+
+      def __10__():
+          try:
+              target = input(Fore.RED  + "Enter Your Address WebSite" + Fore.YELLOW  + " ==>  ")
+              info = requests.get("http://api.hackertarget.com/whois/?q=" + target).text
+              print(Fore.GREEN + info)
+          except:
+              pass
+      __10__() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
