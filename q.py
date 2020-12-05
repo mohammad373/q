@@ -253,7 +253,7 @@ if n == 7 :
                         sys.exit()
                     except:
                         pass
-                info = ipapi.loction(ip = socket.gethostbyname(str(i)) , key = None , filed = None)
+                info = ipapi.loction((ip=i, key=None, field=None)
                 try:
                     print(Fore.GREEN + "Your Ip " + Fore.YELLOW + "==> " + Fore.RED + info["ip"])
                     print(Fore.GREEN + "City "    + Fore.YELLOW + "==>  " + Fore.RED + info["city"])
@@ -264,6 +264,8 @@ if n == 7 :
                     print(Fore.GREEN + "Org "    + Fore.YELLOW + "==>  " + Fore.RED + info["org"])
                 except:
                     pass
+        except:                             
+               pass                      
         __7__()
 
 
