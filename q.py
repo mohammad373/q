@@ -237,7 +237,34 @@ if n == 6:
 
 # ip addres for atlaatwebsite
 
+if n == 7 :
+        import ipapi
+        import sys
+        import time
+        from colorama import Fore
 
+        def __7__():
+            try:
+                i = input(Fore.RED + "Enter Your IP Address WebSite" + Fore.YELLOW + " ==>  ")
+                if i == "":
+                    try:
+                        print(Fore.GREEN + "Ok Good Lunch ;)")
+                        time.sleep(3)
+                        sys.exit()
+                    except:
+                        pass
+                info = ipapi.loction(ip = i + key = None + filed = None)
+                try:
+                    print(Fore.GREEN + "Your Ip " + Fore.YELLOW + "==> " + Fore.RED + info["ip"])
+                    print(Fore.GREEN + "City "    + Fore.YELLOW + "==>  " + Fore.RED + info["city"])
+                    print(Fore.GREEN + "Ip Country "    + Fore.YELLOW + "==>  " + Fore.RED + info["country"])
+                    print(Fore.GREEN + "Country "    + Fore.YELLOW + "==>  " + Fore.RED + info["country_name"])
+                    print(Fore.GREEN + "Region "    + Fore.YELLOW + "==>  " + Fore.RED + info["region"])
+                    print(Fore.GREEN + "Callinf Code "    + Fore.YELLOW + "==>  " + Fore.RED + info["country_calling_code"])
+                    print(Fore.GREEN + "Org "    + Fore.YELLOW + "==>  " + Fore.RED + info["org"])
+                except:
+                    pass
+        __7__()
 
 
 
