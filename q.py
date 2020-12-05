@@ -283,7 +283,7 @@ if n == 8:
                   except:
                       print(Fore.WHITE + "")
 
-                      
+              __8__()        
                    
 
 
