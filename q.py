@@ -174,21 +174,7 @@ if n == 5:
 
 
 if n == 6:
-          import requests
-          import sys
-          import time
-          from colorama import Fore
-          def __6__():
-              try:
-                  site = input("Enter Your Address webSite ==>  ")
-                  if site == "":
-                      try:
-                          print("Ok Good Lungh ;)")
-                          time.sleep(2)
-                          sys.exit()
-                      except:
-                          pass
-                  my_list = ['robots.txt',
+          my_list = ['robots.txt',
                 'search/',
                 'admin/',
                 'login/',
@@ -222,16 +208,28 @@ if n == 6:
                 'INSTALL.sqlite.txt',
                 'UPGRADE.txt',
                 'INSTALL.mysql.txt']
-
-                  if "https://" in site:
-                      site = site + "/"
-                  elif "http://" in site:
-                      site = site + "/"
-                  else:
-                      site = "http://" + site + "/"
+          import requests
+          import sys
+          import time
+          from colorama import Fore
+          def __6__():
+              try:
+                  url = input("Enter Your Address webSite ==>  ")
+                  if url == "":
+                      try:
+                          print("Ok Good Lungh ;)")
+                          time.sleep(2)
+                          sys.exit()
+                      except:
+                          pass
+                  if 'http' in url:
+                        pass
+                 elif 'http' != url:
+                       url = ('http://'+url)
+               
                   for i in my_list:
                       time.sleep(0.1)
-                      rq = site + i
+                      rq = url+ "/" + i
                       r = requests.get(rq)
                       if r.status_code  == 200 or r.status_code  == 405:
                           print(r + " | " + "Found")
