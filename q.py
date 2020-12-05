@@ -239,7 +239,7 @@ if n == 6:
 
 if n == 7 :
         import ipapi
-        import sys
+        import socket
         import time
         from colorama import Fore
 
@@ -253,7 +253,7 @@ if n == 7 :
                         sys.exit()
                     except:
                         pass
-                info = ipapi.loction(ip = i + key = None + filed = None)
+                info = ipapi.loction(ip = socket.gethostbyname(str(i)) + key = None + filed = None)
                 try:
                     print(Fore.GREEN + "Your Ip " + Fore.YELLOW + "==> " + Fore.RED + info["ip"])
                     print(Fore.GREEN + "City "    + Fore.YELLOW + "==>  " + Fore.RED + info["city"])
