@@ -230,8 +230,10 @@ if n == 6:
                   else:
                       site = "http://" + site + "/"
                   for i in my_list:
-                      r = site + i
-                      if r.status_code == 200 or r.status_code == 405:
+                      time.sleep(0.1)
+                      rq = site + i
+                      r = requests.get(rq)
+                      if r.status_code  == 200 or r.status_code  == 405:
                           print(r + " | " + "Found")
                       else:
                           print(r + " | " + "Not Found")
